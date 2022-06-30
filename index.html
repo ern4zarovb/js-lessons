@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <header>
+        <div class="tabs">
+            <div class="tab active" data-tab="1">Слайдер</div>
+            <div class="tab" data-tab="2">Модальное окно</div>
+            <div class="tab" data-tab="3">Табы</div>
+        </div>
+    </header>
+    <section>
+        <div class="contents">
+            <div class="content active" data-content="1">
+                <div class="slide-wrapper">
+                    <div class="slide active">
+                        <img src="images/img_1.jpg" alt="nature">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img_2.jpg" alt="nature">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img_3.jpg" alt="nature">
+                    </div>
+                    <div id="btn-prev"></div>
+                    <div id="btn-next"></div>
+                </div>
+                <div class="dots-wrapper">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="content" data-content="2">
+                <div class="modal-text">Нажми на кнопку, чтобы открыть модальное окно</div>
+                <div class="flex-wrapper">
+                    <div id="btn-open">Открыть</div>
+                </div>
+                <div id="wrapper-modal">
+                    <div id="overlay"></div>
+                    <div id="modal-window">
+                        <div>
+                            <button id="btn-close">🗙</button>
+                        </div>
+                        <div class="mw-content">
+                            <p class="a">Учись! Твори! Развивайся!</p>
+                        </div>
+                        <div class="mw-content">
+                            <a href="https://my.wayup.in/" target="_blank" class="a">Курсы Wayup&#128640</a>
+                        </div>
+                        <div class="mw-content">
+                            <a href="https://my.wayup.in/course/3" target="_blank" class="a">Javascript: погружение&#128293</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" data-content="3">
+                <h2 class="tabs-text-content3">Кнопки в Header это и есть табы.</h2>
+                <h2 class="tabs-text-content3">Нажимая на них, можно посмотреть разные контенты без каких-либо переадресации.</h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
